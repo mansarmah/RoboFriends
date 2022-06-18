@@ -3,6 +3,7 @@ import './App.css';
 import CardList from '../components/CardList';
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
+import ErrorBoundary from "../components/ErrorBoundary";
 
 
 // const App = () => {
@@ -60,7 +61,9 @@ class App extends Component{
                 //In SearchBox, the onChange event gets trigger and send out the input values back to App.
                 //As searchChange has a function to call, it will use the property value to execute.  */}
                 <Scroll>
-                    <CardList robots = {filter}/>
+                    <ErrorBoundary>
+                        <CardList robots = {filter}/>
+                    </ErrorBoundary>     
                 </Scroll>
                 {/* As the filter gives a new array of robots, we pass that parameter to CardList to render that specific robot list */}
             </div>        
