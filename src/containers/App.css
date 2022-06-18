@@ -1,0 +1,13 @@
+h1{
+    font-family: 'Fascinate', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    /* font-size: 70px; */
+    letter-spacing: 2.6px;
+    word-spacing: 2.4px;
+    color: #FF0000;
+    font-weight: 700;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;                                       
+}
